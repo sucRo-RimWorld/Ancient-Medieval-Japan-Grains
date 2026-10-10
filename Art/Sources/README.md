@@ -25,6 +25,17 @@ The 19 source/candidate/production byte identities and active paths are in [Grai
 
 [AstraReplacement-20261010.json](AstraReplacement-20261010.json) is a **historical 2026-10-10 overwrite log**, not a current-path inventory: its `copies` include subsequently removed source and texture aliases. Normal-zoom RimWorld visual review remains pending.
 
+## Pending art destinations
+
+The following empty source directories are reserved for confirmed missing images, using `.gitkeep` only so Git can retain the folders. They are **not** accepted originals or game-ready graphics. Do not place placeholder PNGs in `Textures/` or change Def `texPath` until an artwork is approved and installed.
+
+- Resource families: edible millet, barley and wheat; rice husks and Vanilla `RawRice` retexture; millet, buckwheat and non-MO wheat flour.
+- Prepared foods: `AMJC_Houtou`, `AMJC_Sobagaki`, `AMJC_MilletDumplings`.
+- AMJ-owned equipment: `AMJC_GrainProcessingSpot`, `AMJC_GrainProcessingTable`, and non-MO `AMJC_ManualMillstone`.
+- Harvested sheaves: `Low/` and `Medium/` source-work directories within each of the five currently adopted dense sheaf families. The adopted high-stack masters remain untouched.
+
+See `Docs/Design.md §12.1.3–12.1.4` and `main:Docs/Coordination.md` (AMJ-018) for final image-state quantities and pending visual approval. These are source-work slots, **not** new production texture paths or new image-state rules. Replace/remove `.gitkeep` when a real master is committed.
+
 ## Inventory / recovery queue
 
 The complete Core source-recovery inventory is [Inventory.md](Inventory.md): 19 image roles, 12 already archived and 7 pending source verification/recovery, with 2 supplemental references counted separately. Original-file counts may differ where several assets share one source sheet. A candidate's presence does not establish final-source identity; three named immature-millet candidates were measured at 256×256 and must not be promoted to pre-resize masters. G04 now has a separately verified high-resolution original.
