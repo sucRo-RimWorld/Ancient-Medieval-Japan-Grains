@@ -19,6 +19,7 @@ def main():
     assert len([r for r in assets if r["state"] == "mature"]) == 7
     assert len([r for r in assets if r["state"] == "immature"]) == 7
     assert len([r for r in assets if r["state"] == "sheaf"]) == 5
+    assert not list((ROOT / "Textures/Things/Plants").glob("*/*_Simple")), "obsolete _Simple production crop directories remain"
     for row in assets:
         source = ROOT / row["source"]
         candidate = ROOT / row["candidate"]
