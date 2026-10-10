@@ -17,21 +17,13 @@ This directory stores accepted source artwork and authoring files that must surv
 - If an already-approved master survives elsewhere (for example a persistent reference store), migrate the **exact accepted bytes** here when that asset is next touched. Do not substitute a production-resolution derivative or regenerated approximation for a missing source.
 - A source is not considered repository-preserved until the exact file is actually committed here.
 
-## Accepted leafless millet set — 2026-10-09
+## Current crop/sheaf originals — 2026-10-11
 
-Author accepted the Awa/Hie/Kibi immature and mature images and mixed millet sheaf with 「では一旦これでFixとする」. Exact built-in ImageGen originals are preserved locally under `Things/Plants/{FullGrown,Immature}/AMJC_{Awa,Hie,Kibi}_Simple/` and `Things/Item/Resource/AMJC_Millet/MixedMilletSheaf/MixedMilletSheaf.png`. Existing accepted sources remain unchanged. These exact originals are included in the 2026-10-10 GitHub integration; subsequent review revisions remain separately preserved under Art/Candidates.
+All seven growing crops have exactly one current high-resolution original for each immature and mature state at `Art/Sources/Things/Plants/{Immature,FullGrown}/AMJC_<Crop>/AMJC_<Crop>_<State>.png`. The production `Textures/` paths mirror these regular crop directories. The five adopted dense sheaf originals remain under their dedicated `Art/Sources/Things/Item/Resource/` folders.
 
-Prompts, source/export hashes and mechanical QA are in `Art/Candidates/MilletSimplification-20261009/`. Exports use uniform whole-canvas BOX downsampling onto 256×256 transparent canvases; this avoids LANCZOS low-alpha ringing for these sources. Three stack slots reuse identical bytes. Species are conveyed through seed-head silhouette with no leaves or individual grain outlines. Immature is green; mature is ochre. This is the author-approved narrower millet revision; other crop/resource art is unchanged.
+The 19 source/candidate/production byte identities and active paths are in [GrainsCropSourceManifest.json](../../Docs/References/GrainsCropSourceManifest.json), guarded by `Tests/test_grains_art_source_archive.py`. Current immature source masters are the outline-normalized high-resolution inputs; the untouched generation inputs, intermediate drawings, superseded placeholders, and older accepted revisions are retained in `Art/Candidates/` or Git history. Former `_Simple` files and a redundant `MixedMilletSheaf` source alias were removed from `Art/Sources/` after proving matching archive/candidate bytes. No accepted current source was re-encoded, and no game textures, Defs or balance were changed.
 
-## Integrated crop-family source archive — 2026-10-10
-
-Nineteen player-visible crop/sheaf graphic states (seven mature, seven immature, five bundled sheaves) are linked from [the exact-byte manifest](../../Docs/References/GrainsCropSourceManifest.json). Three already archived mature millet sources were left byte-for-byte unchanged. Sixteen new high-resolution sources are copied from committed candidate sources without re-encoding, including seven normalized-outline immature sources. The three earlier accepted Awa/Hie/Kibi immature source masters are retained under their original filenames, while current upright/outlined revisions use `*_Outline20261009.png`.
-
-The untouched ImageGen sources, any intermediary outline edits, and final approved 256px exports remain under `Art/Candidates/ImmatureUpright-20261009/`. The high-resolution normalized immature inputs are not exact pixel derivatives of all final 256px exports because the final post-export palette pass applies. Do not substitute the old master for the latest displayed variant or silently overwrite either. Production `Textures/` and XML/patch paths already refer to the accepted outputs; game-render verification is still outstanding. `Tests/test_grains_art_source_archive.py` checks the bytes and all 19 mapped production images.
-
-The historical 2026-10-07 14-role inventory remains a separate legacy-source recovery exercise; its 7 pending cases are not automatically closed by this newer family.
-
-Current crop `Textures/` paths use normal `AMJC_<crop>` directory names, without `_Simple`. Paths under `Art/Sources/` retain historical source provenance, including `_Simple`-named folders; they are not a second set of active game graphics.
+[AstraReplacement-20261010.json](AstraReplacement-20261010.json) is a **historical 2026-10-10 overwrite log**, not a current-path inventory: its `copies` include subsequently removed source and texture aliases. Normal-zoom RimWorld visual review remains pending.
 
 ## Inventory / recovery queue
 
