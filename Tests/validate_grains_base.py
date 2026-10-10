@@ -17,24 +17,24 @@ MO_GRAPHIC_PATHS = {
 # validate exact current paths, then normalize only graphics for the MO contract.
 AMJ_GRAPHICS = {
     "AMJC_Plant_FoxtailMillet_Awa": {
-        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Awa_Simple", "Things/Plants/FullGrown/AMJC_Awa"),
-        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Awa_Simple", "Things/Plants/Immature/AMJC_Awa"),
+        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Awa", "Things/Plants/FullGrown/AMJC_Awa"),
+        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Awa", "Things/Plants/Immature/AMJC_Awa"),
     },
     "AMJC_Plant_BarnyardMillet_Hie": {
-        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Hie_Simple", "Things/Plants/FullGrown/AMJC_Hie"),
-        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Hie_Simple", "Things/Plants/Immature/AMJC_Hie"),
+        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Hie", "Things/Plants/FullGrown/AMJC_Hie"),
+        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Hie", "Things/Plants/Immature/AMJC_Hie"),
     },
     "AMJC_Plant_ProsoMillet_Kibi": {
-        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Kibi_Simple", "Things/Plants/FullGrown/AMJC_Kibi"),
-        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Kibi_Simple", "Things/Plants/Immature/AMJC_Kibi"),
+        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Kibi", "Things/Plants/FullGrown/AMJC_Kibi"),
+        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Kibi", "Things/Plants/Immature/AMJC_Kibi"),
     },
     "AMJC_Plant_Buckwheat_Soba": {
-        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Soba_Simple", "Things/Plants/FullGrown/AMJC_Soba"),
-        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Soba_Simple", "Things/Plants/Immature/AMJC_Soba"),
+        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Soba", "Things/Plants/FullGrown/AMJC_Soba"),
+        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Soba", "Things/Plants/Immature/AMJC_Soba"),
     },
     "AMJC_Plant_Barley": {
-        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Barley_Simple", "Things/Plants/FullGrown/WheatPlant"),
-        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Barley_Simple", "Things/Plants/Immature/WheatPlant"),
+        "graphicData/texPath": ("Things/Plants/FullGrown/AMJC_Barley", "Things/Plants/FullGrown/WheatPlant"),
+        "plant/immatureGraphicPath": ("Things/Plants/Immature/AMJC_Barley", "Things/Plants/Immature/WheatPlant"),
     },
     "AMJC_RawMillet": {
         "graphicData/texPath": ("Things/Item/Resource/AMJC_Millet/MixedMilletSheafDense", "Things/Item/Resource/AMJC_Millet/RawMillet"),
@@ -44,12 +44,9 @@ AMJ_GRAPHICS = {
     },
     "AMJC_RawBarley": {
         "graphicData/texPath": ("Things/Item/Resource/AMJC_Barley/RawBarleyDense", "Things/Item/Resource/AMJC_Millet/RawMillet"),
-<<<<<<< HEAD
-=======
     },
     "AMJC_BarleyInHull": {
         "graphicData/texPath": ("Things/Item/Resource/AMJC_Barley/BarleyInHull", "Things/Item/Resource/AMJC_Millet/MilletInHull"),
->>>>>>> b9b5cfdeeae17e98f0546e532e088fae2db90768
     },
     "AMJC_GrainProcessingSpot": {
         "graphicData/texPath": ("Things/Building/Production/TableStonecutter", "Things/Building/Production/StonecuttingSpot"),
@@ -202,12 +199,12 @@ def validate():
     barley = get("AMJC_Plant_Barley")
     for element, folder in (("graphicData/texPath", "FullGrown"), ("plant/immatureGraphicPath", "Immature")):
         stem = barley.findtext(element)
-        assert stem == "Things/Plants/" + folder + "/AMJC_Barley_Simple", "Unexpected Base barley graphic"
+        assert stem == "Things/Plants/" + folder + "/AMJC_Barley", "Unexpected Base barley graphic"
         assert any((ROOT / "Textures" / stem).glob("*.png")), "Missing AMJ barley graphic family"
     wheat = get("AMJC_Plant_Wheat")
     for element, folder in (("graphicData/texPath", "FullGrown"), ("plant/immatureGraphicPath", "Immature")):
         stem = wheat.findtext(element)
-        assert stem == "Things/Plants/" + folder + "/AMJC_Wheat_Simple"
+        assert stem == "Things/Plants/" + folder + "/AMJC_Wheat"
         assert any((ROOT / "Textures" / stem).glob("*.png"))
     for name, folder, stem in (("AMJC_RawMillet", "AMJC_Millet", "MixedMilletSheafDense"),
                                ("AMJC_RawBuckwheat", "AMJC_Buckwheat", "RawBuckwheatDense"),
@@ -226,11 +223,7 @@ def validate():
         if (node.findtext("defName") or "").startswith("AMJC_Thresh"):
             assert len(node.findall("products/*")) == 1
     assert any(n.findtext("defName") == "AMJC_ThreshWheat" for n in base)
-<<<<<<< HEAD
-    print("Grains Base MO identifier/class references 0; pre-split MO contracts preserved except explicitly allowlisted visual paths: PASS")
-=======
     print("Grains Base references and historical contracts with allowlisted graphics and MO research/material overrides: PASS")
->>>>>>> b9b5cfdeeae17e98f0546e532e088fae2db90768
     print("Known MO texture paths absent from Base: PASS; inherited/full game references and runtime texture resolution are not validated; see Docs/GrainsDependencyAudit.md")
 
 

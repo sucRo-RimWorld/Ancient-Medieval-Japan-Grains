@@ -18,7 +18,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plants/FullGrown/AMJC_Awa_Simple</texPath>
+      <texPath>Things/Plants/FullGrown/AMJC_Awa</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -40,7 +40,7 @@
       <minOptimalGrowthTemperature>18</minOptimalGrowthTemperature>
       <maxOptimalGrowthTemperature>32</maxOptimalGrowthTemperature>
       <visualSizeRange>0.5~1.0</visualSizeRange>
-      <immatureGraphicPath>Things/Plants/Immature/AMJC_Awa_Simple</immatureGraphicPath>
+      <immatureGraphicPath>Things/Plants/Immature/AMJC_Awa</immatureGraphicPath>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
       <sowMinSkill>0</sowMinSkill>
@@ -59,7 +59,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plants/FullGrown/AMJC_Hie_Simple</texPath>
+      <texPath>Things/Plants/FullGrown/AMJC_Hie</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -81,7 +81,7 @@
       <minOptimalGrowthTemperature>15</minOptimalGrowthTemperature>
       <maxOptimalGrowthTemperature>30</maxOptimalGrowthTemperature>
       <visualSizeRange>0.5~1.0</visualSizeRange>
-      <immatureGraphicPath>Things/Plants/Immature/AMJC_Hie_Simple</immatureGraphicPath>
+      <immatureGraphicPath>Things/Plants/Immature/AMJC_Hie</immatureGraphicPath>
       <wildOrder>3</wildOrder>
       <purpose>Food</purpose>
       <sowMinSkill>0</sowMinSkill>
@@ -100,7 +100,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plants/FullGrown/AMJC_Kibi_Simple</texPath>
+      <texPath>Things/Plants/FullGrown/AMJC_Kibi</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -122,7 +122,7 @@
       <minOptimalGrowthTemperature>18</minOptimalGrowthTemperature>
       <maxOptimalGrowthTemperature>32</maxOptimalGrowthTemperature>
       <visualSizeRange>0.5~1.0</visualSizeRange>
-      <immatureGraphicPath>Things/Plants/Immature/AMJC_Kibi_Simple</immatureGraphicPath>
+      <immatureGraphicPath>Things/Plants/Immature/AMJC_Kibi</immatureGraphicPath>
       <wildOrder>4</wildOrder>
       <purpose>Food</purpose>
       <sowMinSkill>0</sowMinSkill>
@@ -142,7 +142,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plants/FullGrown/AMJC_Soba_Simple</texPath>
+      <texPath>Things/Plants/FullGrown/AMJC_Soba</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -166,7 +166,7 @@
       <minOptimalGrowthTemperature>12</minOptimalGrowthTemperature>
       <maxOptimalGrowthTemperature>25</maxOptimalGrowthTemperature>
       <visualSizeRange>0.5~1.0</visualSizeRange>
-      <immatureGraphicPath>Things/Plants/Immature/AMJC_Soba_Simple</immatureGraphicPath>
+      <immatureGraphicPath>Things/Plants/Immature/AMJC_Soba</immatureGraphicPath>
       <wildOrder>5</wildOrder>
       <purpose>Food</purpose>
       <sowMinSkill>1</sowMinSkill>
@@ -187,7 +187,7 @@
     </statBases>
     <graphicData>
       <!-- Dedicated simplified barley art; local visual review. -->
-      <texPath>Things/Plants/FullGrown/AMJC_Barley_Simple</texPath>
+      <texPath>Things/Plants/FullGrown/AMJC_Barley</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -211,7 +211,7 @@
       <minOptimalGrowthTemperature>5</minOptimalGrowthTemperature>
       <maxOptimalGrowthTemperature>22</maxOptimalGrowthTemperature>
       <visualSizeRange>0.5~1.0</visualSizeRange>
-      <immatureGraphicPath>Things/Plants/Immature/AMJC_Barley_Simple</immatureGraphicPath>
+      <immatureGraphicPath>Things/Plants/Immature/AMJC_Barley</immatureGraphicPath>
       <wildOrder>6</wildOrder>
       <purpose>Food</purpose>
       <sowMinSkill>2</sowMinSkill>

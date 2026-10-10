@@ -10,7 +10,7 @@
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Awa_Immature.png",
       "source": "Art/Sources/Things/Plants/Immature/AMJC_Awa_Simple/AMJC_Awa_Immature_Outline20261009.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Awa_Simple/AMJC_Awa_Immature.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Awa/AMJC_Awa_Immature.png",
       "git_blob_sha1": "4f511ce32bcbe422101cd56c12ff4ed0529f8c6a"
     },
     {
@@ -18,7 +18,7 @@
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Hie_Immature.png",
       "source": "Art/Sources/Things/Plants/Immature/AMJC_Hie_Simple/AMJC_Hie_Immature_Outline20261009.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Hie_Simple/AMJC_Hie_Immature.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Hie/AMJC_Hie_Immature.png",
       "git_blob_sha1": "d00874fc055cc02582219b0ac3633ecd07057a8c"
     },
     {
@@ -26,39 +26,39 @@
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Kibi_Immature.png",
       "source": "Art/Sources/Things/Plants/Immature/AMJC_Kibi_Simple/AMJC_Kibi_Immature_Outline20261009.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Kibi_Simple/AMJC_Kibi_Immature.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Kibi/AMJC_Kibi_Immature.png",
       "git_blob_sha1": "fec761199c82816233fb779f9a5cd0587bb14310"
     },
     {
       "crop": "Soba",
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Soba_Immature.png",
-      "source": "Art/Sources/Things/Plants/Immature/AMJC_Soba_Simple/AMJC_Soba_Immature.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Soba_Simple/AMJC_Soba_Immature.png",
+      "source": "Art/Sources/Things/Plants/Immature/AMJC_Soba_Simple/AMJC_Soba_Immature_OutlineNormalized.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Soba/AMJC_Soba_Immature.png",
       "git_blob_sha1": "c0937a6a9f5e8139d12fbfaab1a64933cd144bf3"
     },
     {
       "crop": "Barley",
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Barley_Immature.png",
-      "source": "Art/Sources/Things/Plants/Immature/AMJC_Barley_Simple/AMJC_Barley_Immature.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Barley_Simple/AMJC_Barley_Immature.png",
+      "source": "Art/Sources/Things/Plants/Immature/AMJC_Barley_Simple/AMJC_Barley_Immature_OutlineNormalized.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Barley/AMJC_Barley_Immature.png",
       "git_blob_sha1": "2c51fd97e4cd5e962f79ddd785c3f43a45f5f87a"
     },
     {
       "crop": "Wheat",
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Wheat_Immature.png",
-      "source": "Art/Sources/Things/Plants/Immature/AMJC_Wheat_Simple/AMJC_Wheat_Immature.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Wheat_Simple/AMJC_Wheat_Immature.png",
+      "source": "Art/Sources/Things/Plants/Immature/AMJC_Wheat_Simple/AMJC_Wheat_Immature_OutlineNormalized.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Wheat/AMJC_Wheat_Immature.png",
       "git_blob_sha1": "6e28544ae9c9ae447e4d67f53e1365591d0bc91b"
     },
     {
       "crop": "Rice",
       "state": "immature",
       "candidate": "Art/Candidates/ImmatureUpright-20261009/Normalized/Rice_Immature.png",
-      "source": "Art/Sources/Things/Plants/Immature/AMJC_Rice_Simple/AMJC_Rice_Immature.png",
-      "production": "Textures/Things/Plants/Immature/AMJC_Rice_Simple/AMJC_Rice_Immature.png",
+      "source": "Art/Sources/Things/Plants/Immature/AMJC_Rice_Simple/AMJC_Rice_Immature_OutlineNormalized.png",
+      "production": "Textures/Things/Plants/Immature/AMJC_Rice/AMJC_Rice_Immature.png",
       "git_blob_sha1": "efa790f7afac7c03c085bbd42f0b9736ab98978c"
     },
     {
@@ -66,7 +66,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/MilletSimplification-20261009/Sources/Awa_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Awa_Simple/AMJC_Awa_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Awa_Simple/AMJC_Awa_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Awa/AMJC_Awa_Mature.png",
       "git_blob_sha1": "73f7c8da7c08c86be96918dce7d7a31e0264aef4"
     },
     {
@@ -74,7 +74,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/MilletSimplification-20261009/Sources/Hie_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Hie_Simple/AMJC_Hie_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Hie_Simple/AMJC_Hie_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Hie/AMJC_Hie_Mature.png",
       "git_blob_sha1": "52284ed7fb9875088427be912f645218372d98e5"
     },
     {
@@ -82,7 +82,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/MilletSimplification-20261009/Sources/Kibi_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Kibi_Simple/AMJC_Kibi_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Kibi_Simple/AMJC_Kibi_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Kibi/AMJC_Kibi_Mature.png",
       "git_blob_sha1": "0c196fcc0939545707b3aab6cfcc01e8ab4a393b"
     },
     {
@@ -90,7 +90,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/GrainSimplification-20261009/Sources/Soba_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Soba_Simple/AMJC_Soba_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Soba_Simple/AMJC_Soba_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Soba/AMJC_Soba_Mature.png",
       "git_blob_sha1": "2cac32dcae57284615b360f64a0c86dc0f33fef5"
     },
     {
@@ -98,7 +98,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/GrainSimplification-20261009/Sources/Barley_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Barley_Simple/AMJC_Barley_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Barley_Simple/AMJC_Barley_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Barley/AMJC_Barley_Mature.png",
       "git_blob_sha1": "7e553197c3b49a97a2665a419612548f57366544"
     },
     {
@@ -106,7 +106,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/GrainSimplification-20261009/Sources/Wheat_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Wheat_Simple/AMJC_Wheat_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Wheat_Simple/AMJC_Wheat_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Wheat/AMJC_Wheat_Mature.png",
       "git_blob_sha1": "8e7f67a46bad2f358c973b8d008605a5855c2807"
     },
     {
@@ -114,7 +114,7 @@
       "state": "mature",
       "candidate": "Art/Candidates/UplandRice-20261009/Sources/Rice_Mature.png",
       "source": "Art/Sources/Things/Plants/FullGrown/AMJC_Rice_Simple/AMJC_Rice_Mature.png",
-      "production": "Textures/Things/Plants/FullGrown/AMJC_Rice_Simple/AMJC_Rice_Mature.png",
+      "production": "Textures/Things/Plants/FullGrown/AMJC_Rice/AMJC_Rice_Mature.png",
       "git_blob_sha1": "6795aeff8fd32a540f8fb657e06ff4503ee58d06"
     },
     {

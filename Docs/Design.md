@@ -1363,15 +1363,11 @@ Medieval Overhaulと並べても違和感が少ない、**ベクター画像的�
 
 2026-10-09に作者が「では一旦これでFixとする」と最終採用。`Art/Candidates/MilletSimplification-20261009/` にプロンプト、256px書き出し、比較画像、検査結果を保存し、採用した7枚の生成原本は新しい画像パスに対応する `Art/Sources/` 配下へ同一バイトで保存した。過去の採用済み原本は上書きしない。ローカル反映済みであり、Gitコミット・公開・実ゲーム表示確認は未実施。
 
-3種は `Things/Plants/{FullGrown,Immature}/AMJC_{Awa,Hie,Kibi}_Simple`、雑穀束は `Things/Item/Resource/AMJC_Millet/MixedMilletSheaf` を参照する。従来パスを利用する大麦・稲の仮画像を変えないため、新しい専用パスで分離する。束の3スタックスロットは同一PNGとし、作物・収穫量・加工・食品数値は変更しない。
+3種は `Things/Plants/{FullGrown,Immature}/AMJC_{Awa,Hie,Kibi}`、雑穀束は `Things/Item/Resource/AMJC_Millet/MixedMilletSheaf` を参照する。2026-10-09当時は大麦・稲の仮画像を維持するため `_Simple` という別パスを作成したが、各作物に専用画像が統合された現在、その区別は不要。本番は通常の `AMJC_<作物>` パスに統一し、旧本番PNGを重複保持しない。束の3スタックスロットは同一PNGとし、作物・収穫量・加工・食品数値は変更しない。
 
 #### ソバ・大麦・AMJ小麦および密集した束への拡張（2026-10-09）
 
-<<<<<<< HEAD
-作者の追加依頼により、ソバ・大麦・AMJ小麦の未熟／成熟を同じ葉なし・輪郭主体の画風で制作。ソバは三角形の実と赤みのある成熟茎、大麦は長い芒、小麦は短い先端を持つ太い穂で区別する。参照先は `Things/Plants/{FullGrown,Immature}/AMJC_{Soba,Barley,Wheat}_Simple`。AMJ小麦は `BaseWithoutMO` の独自作物に適用し、MO小麦の原本・画像参照は変更しない。
-=======
-作者の追加依頼により、ソバ・大麦・AMJ小麦の未熟／成熟を同じ葉なし・輪郭主体の画風で制作。ソバは三角形の実と赤みのある成熟茎、大麦は長い芒、小麦は短い先端を持つ太い穂で区別する。参照先は `Things/Plants/{FullGrown,Immature}/AMJC_{Soba,Barley,Wheat}_Simple`。AMJ小麦は `BaseWithoutMO` の独自作物に適用する。MO併用時も `WheatGraphics.xml` でMO小麦の未熟・成熟・束を同じAMJ画像へ割り当て、MOのDef識別子・ゲーム仕様は維持する。
->>>>>>> b9b5cfdeeae17e98f0546e532e088fae2db90768
+作者の追加依頼により、ソバ・大麦・AMJ小麦の未熟／成熟を同じ葉なし・輪郭主体の画風で制作。ソバは三角形の実と赤みのある成熟茎、大麦は長い芒、小麦は短い先端を持つ太い穂で区別する。参照先は `Things/Plants/{FullGrown,Immature}/AMJC_{Soba,Barley,Wheat}`。AMJ小麦は `BaseWithoutMO` の独自作物に適用する。MO併用時も `WheatGraphics.xml` でMO小麦の未熟・成熟・束を同じAMJ画像へ割り当て、MOのDef識別子・ゲーム仕様は維持する。
 
 さらに「雑穀束、ソバ束、大麦束、AMJ小麦束はよりMO小麦束に似せてほしい／よりたくさんの穂が束ねられてるようにする」という作者指示により、束4種を幅広く密集した穂・実の塊、単純な帯、太く短い裾へ改稿。雑穀束はアワ・ヒエ・キビの特徴を外周に残す。現在のローカル参照は `AMJC_Millet/MixedMilletSheafDense`、`AMJC_Buckwheat/RawBuckwheatDense`、`AMJC_Barley/RawBarleyDense`、`AMJC_Wheat/RawWheatDense`（共通接頭辞 `Things/Item/Resource/`）。各3スタックスロットは同一PNG。
 
@@ -1385,18 +1381,15 @@ PNG全53枚の構造検査と生成原本／書き出しの機械QAは合格。�
 
 さらに未熟7種（アワ・ヒエ・キビ・ソバ・大麦・AMJ小麦・陸稲）の輪郭を、MO小麦未熟の暗い灰緑色を基準に変更した。MO実画像から測定した代表輪郭RGBは `(80,83,69)` / `#505345`。ImageGenによる色合わせであり、全輪郭ピクセルのRGB完全一致や元画像とのピクセル単位の形状不変を保証する処理ではない。成熟・他の束はこの輪郭色変更の対象外。
 
-所有者はGrains、元DefはCoreの `Plant_Rice`、全構成で有効。`Patches/UplandRiceGraphics.xml` は `graphicData/texPath` と `plant/immatureGraphicPath` だけを `Things/Plants/{FullGrown,Immature}/AMJC_Rice_Simple` に置換し、Graphic_Random・サイズ・植生設定を維持する。稲束は `Things/Item/Resource/AMJC_Rice/RiceSheafDense`、3スタックスロット同一PNG。インストール済みCoreの両対象フィールドを確認し、MO 1.6配下のXMLにはこれらを上書きする競合を検出しなかった。全Modのロード後競合・実描画は未確認。
+所有者はGrains、元DefはCoreの `Plant_Rice`、全構成で有効。`Patches/UplandRiceGraphics.xml` は `graphicData/texPath` と `plant/immatureGraphicPath` だけを `Things/Plants/{FullGrown,Immature}/AMJC_Rice` に置換し、Graphic_Random・サイズ・植生設定を維持する。稲束は `Things/Item/Resource/AMJC_Rice/RiceSheafDense`、3スタックスロット同一PNG。インストール済みCoreの両対象フィールドを確認し、MO 1.6配下のXMLにはこれらを上書きする競合を検出しなかった。全Modのロード後競合・実描画は未確認。
 
 生成原本・プロンプト・QA・比較画像は `Art/Candidates/UplandRice-20261009/` と `Art/Candidates/ImmatureOutline-20261009/` に保存。既存の採用原本を保持し、変更前のゲーム用未熟画像も後者の `Before/` に保存。今回の画像はローカル確認用 `review`。PNG全58枚、陸稲の7作物比較27条件／構成の静的回帰、隔離コピーでのStage A・Base/MO契約が合格（`TestResults/RiceArtStatic-20261009/static-result.txt`）。隔離コピーでは未変更移管ファイルのCRLFだけをGit原本バイトへ戻して検査した。実ゲーム表示・作者の最終採用・コミット／公開は未実施。
 
-<<<<<<< HEAD
-=======
 2026-10-10 GitHub反映: 作者依頼により生成済み画像・原本・参照設定を統合する。最新の未熟7種は `Art/Candidates/ImmatureUpright-20261009/` の工程で輪郭色 `#4D4E3C` に統一し、アワ・ヒエ・キビの未熟穂を上向きへ修正済み。上記の未公開記述は各制作時点の記録。実ゲーム表示とreview画像の最終視覚採用は別途未確認。
 
 
 2026-10-10 原本整理: PR #20で本番に参照された7種の成熟株・7種の未熟株・5種の束について、当該制作用高解像度原本19件を `Art/Sources/` に対応付け（従来保存済み3件を保持・未保存16件を原本バイトで追加）。現行の未熟株は `Art/Candidates/ImmatureUpright-20261009/Normalized/` の輪郭調整済み高解像度原本を用い、元の生成画像は同系列の `Sources/` に残す。対応とバイト同一性は `Docs/References/GrainsCropSourceManifest.json` と `Tests/test_grains_art_source_archive.py` に固定。実描画検証は未実施。旧Core元画像の回収状況は別の棚卸しとして保持。
 
->>>>>>> b9b5cfdeeae17e98f0546e532e088fae2db90768
 #### 12.1.2 縦切り実装の画像完了条件
 
 機能単位の縦切り開発では、成熟画像1枚だけを完成させて「画像完了」としない。**その実装でプレイヤーが通常見る主要な表示状態を一通り本番画像へ置き換え、ゲーム内で確認してから次の機能へ進む。**

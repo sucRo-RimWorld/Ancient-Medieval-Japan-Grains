@@ -25,7 +25,7 @@ def validate():
     for op in graphic_ops:
         tag, folder, state = expected_graphics[op.findtext('xpath')]
         assert op.get('Class') == 'PatchOperationReplace'
-        path = 'Things/Plants/' + folder + '/AMJC_Rice_Simple'
+        path = 'Things/Plants/' + folder + '/AMJC_Rice'
         assert len(op.find('value')) == 1 and op.findtext('value/' + tag) == path
         assert (ROOT / 'Textures' / path / ('AMJC_Rice_' + state + '.png')).is_file()
     rice_slots = [(ROOT / 'Textures/Things/Item/Resource/AMJC_Rice/RiceSheafDense' /
