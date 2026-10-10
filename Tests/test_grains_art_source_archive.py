@@ -20,6 +20,17 @@ def main():
     assert len([r for r in assets if r["state"] == "immature"]) == 7
     assert len([r for r in assets if r["state"] == "sheaf"]) == 5
     assert not list((ROOT / "Textures/Things/Plants").glob("*/*_Simple")), "obsolete _Simple production crop directories remain"
+    # Each live crop stage owns one current high-resolution source at its canonical crop path.
+    assert not list((ROOT / "Art/Sources/Things/Plants").glob("*/*_Simple")), "obsolete _Simple crop source directories remain"
+    for row in assets:
+        if row["state"] not in {"immature", "mature"}:
+            continue
+        crop, state = row["crop"], row["state"]
+        stage = "Immature" if state == "immature" else "FullGrown"
+        suffix = "Immature" if state == "immature" else "Mature"
+        expected = f"Art/Sources/Things/Plants/{stage}/AMJC_{crop}/AMJC_{crop}_{suffix}.png"
+        assert row["source"] == expected, f"noncanonical current source: {crop} {state}"
+
     for row in assets:
         source = ROOT / row["source"]
         candidate = ROOT / row["candidate"]

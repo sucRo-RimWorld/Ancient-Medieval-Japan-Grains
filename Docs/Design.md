@@ -1390,6 +1390,8 @@ PNG全53枚の構造検査と生成原本／書き出しの機械QAは合格。�
 
 2026-10-10 原本整理: PR #20で本番に参照された7種の成熟株・7種の未熟株・5種の束について、当該制作用高解像度原本19件を `Art/Sources/` に対応付け（従来保存済み3件を保持・未保存16件を原本バイトで追加）。現行の未熟株は `Art/Candidates/ImmatureUpright-20261009/Normalized/` の輪郭調整済み高解像度原本を用い、元の生成画像は同系列の `Sources/` に残す。対応とバイト同一性は `Docs/References/GrainsCropSourceManifest.json` と `Tests/test_grains_art_source_archive.py` に固定。実描画検証は未実施。旧Core元画像の回収状況は別の棚卸しとして保持。
 
+2026-10-11 画像原本整理：`Textures/Things/Plants/` の通常名パスに合わせ、7種の未熟・成熟の現行原本を `Art/Sources/Things/Plants/{Immature,FullGrown}/AMJC_<Crop>/AMJC_<Crop>_<State>.png` の14ファイルに集約した。各原本は既存の採用版Git blobを再利用し、再生成・再圧縮しない。`_Simple` を含む原本側の旧パス24ファイルと、現在の密集雑穀束と同一バイトの旧 `MixedMilletSheaf` 原本1ファイルは削除。削除した独自の画像データはすべて `Art/Candidates/` にも存在し、過去の採用記録はGit履歴に残る。現行原本・候補・ゲーム用パスの正本は `Docs/References/GrainsCropSourceManifest.json`。過去の制作段階での「旧原本を保持」「_Simpleに分離」は履歴であり、現在のファイル配置を指定しない。枡・穀粒・その他の採用原本、全本番PNG、Def/XML、数値とロード契約には変更なし。
+
 #### 12.1.2 縦切り実装の画像完了条件
 
 機能単位の縦切り開発では、成熟画像1枚だけを完成させて「画像完了」としない。**その実装でプレイヤーが通常見る主要な表示状態を一通り本番画像へ置き換え、ゲーム内で確認してから次の機能へ進む。**

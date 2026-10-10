@@ -572,6 +572,13 @@
       "role": "Rice_Sheaf"
     }
   ],
+  "current_state_after_2026_10_11": {
+    "kind": "historical_operation_log_not_current_file_inventory",
+    "canonical_source_manifest": "Docs/References/GrainsCropSourceManifest.json",
+    "superseded_art_source_pngs_removed": 25,
+    "retained_current_crop_masters": 14,
+    "note": "The copies array documents 2026-10-10 operations. Its obsolete _Simple Art/Sources and Textures targets were removed by subsequent approved cleanup; do not validate them as current files. Preserve candidate bytes and Git history. Current source/texture paths and verified identities are in the canonical 19-state manifest."
+  },
   "verification": {
     "all_targets_byte_identical": true,
     "all_target_png_integrity": true,
